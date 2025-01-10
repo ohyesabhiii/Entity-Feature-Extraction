@@ -1,33 +1,81 @@
-# Image-based Entity Value Extraction
+# 📦 Image-Based Entity Value Extraction
 
-## Project Overview
-This project aims to extract entity values (such as weight, volume, dimensions) from product images using machine learning techniques. It combines Optical Character Recognition (OCR) and Convolutional Neural Networks (CNN) to process both textual and visual information from the images.
+## 🎯 Project Overview
+This project focuses on extracting entity values 📊 (such as **weight, volume, dimensions**) from product images using **Machine Learning** techniques. The approach involves:
 
-## Setup and Installation
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Download and preprocess the dataset using `data_preparation.py`
+- 🧠 **Optical Character Recognition (OCR)** for textual information
+- 🖼️ **Convolutional Neural Networks (CNN)** for visual features
 
-## Usage
-1. Prepare the data: `python data_preparation.py`
-2. Extract features: `python feature_extraction.py`
-3. Train the model: `python model_training.py`
-4. Generate predictions: `python predict.py`
+Both techniques work together to improve entity extraction accuracy. 🚀
 
-## Model Architecture
-The model uses a hybrid architecture:
-- OCR branch: Embedding layer followed by LSTM
-- CNN branch: Pre-extracted features processed by fully connected layers
-- Combined output: Concatenated features passed through fully connected layers
+---
 
-## Performance
-- Validation Accuracy: 87%
-- F1 Score: 0.85
+## ⚙️ Setup and Installation
+Follow these steps to set up the project:
 
-## Future Improvements
-- Implement data augmentation techniques
-- Explore more advanced OCR methods
-- Fine-tune hyperparameters using techniques like Bayesian optimization
+1. 📥 **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   ```
+2. 📦 **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. 📊 **Download and preprocess the dataset:**
+   ```bash
+   python data_preparation.py
+   ```
 
-## Contact
-For any questions or issues, please open an issue in the GitHub repository.
+---
+
+## 🚀 Usage
+
+Perform the following steps to use the model:
+
+- 🛠️ **Prepare the data:**
+   ```bash
+   python data_preparation.py
+   ```
+- 📈 **Extract features:**
+   ```bash
+   python feature_extraction.py
+   ```
+- 🎯 **Train the model:**
+   ```bash
+   python model_training.py
+   ```
+- 📊 **Generate predictions:**
+   ```bash
+   python predict.py
+   ```
+
+---
+
+## 🧩 Model Architecture
+The hybrid architecture consists of:
+
+- 🧠 **OCR Branch:** Embedding layer ➡️ LSTM
+- 🖼️ **CNN Branch:** Pre-extracted features processed by fully connected layers
+- 🔗 **Combined Output:** Concatenated features passed through fully connected layers
+
+---
+
+## 📊 Performance Metrics
+- ✅ **Validation Accuracy:** **87%**
+- 📈 **F1 Score:** **0.85**
+
+---
+
+## 📈 Future Improvements
+- 🎭 Implement **data augmentation** techniques
+- 🔍 Explore **advanced OCR methods**
+- 🛠️ Fine-tune hyperparameters using **Bayesian Optimization**
+
+---
+
+## 📞 Contact
+For any questions or issues, please feel free to:
+- 🐙 Open an **issue** in the GitHub repository
+- 📧 Reach out via email
+
+Thank you for checking out the project! 🎉
